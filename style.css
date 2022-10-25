@@ -284,6 +284,12 @@ body {
 	box-sizing: content-box;
 	position: relative;
 	z-index: auto;
+
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: textclip 4s linear infinite;
+	
 }
 
 #_tagline {
@@ -343,6 +349,9 @@ body {
 	display: inline;
 	z-index: auto;
 	position: static;
+	animation-name: myname;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
 }
 
 #main-about {
@@ -399,6 +408,7 @@ body {
     -webkit-margin-end: 0px;
     width: 734px;
     height: 35px;
+	
 }
 
 #about_sec_left_row {
@@ -1040,36 +1050,7 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@keyframes textclip{
+	from {background-color:fff;}
+	to{background-color: black;}
+}
