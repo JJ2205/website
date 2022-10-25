@@ -18,5 +18,20 @@ img{
 
 }
 h2{
-    margin-left: 40px;
+   text-transform: uppercase;
+   background-size: auto;
+   background-size: 40% auto;
+   color: #fff;
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: textclip 4s linear infinite;
+  
+   font-size: 20px;
+}
+
+@keyframes textclip{
+	from {background-color:fff;}
+	to{background-color: black;}
 }
